@@ -25,10 +25,15 @@ $(call inherit-product, vendor/streak/config/common_full_phone.mk)
 # Inherit from r5x device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 720
+
+# GApps
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
+#Official
+STREAK_BUILD_TYPE := OFFICIAL
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := r5x
 PRODUCT_MANUFACTURER := Realme
